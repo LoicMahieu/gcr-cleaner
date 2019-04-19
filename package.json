@@ -10,6 +10,9 @@
     "cleaner"
   ],
   "main": "index.js",
+  "bin": {
+    "gcr-cleaner": "./bin/gcr-cleaner"
+  },
   "scripts": {},
   "author": "Loic Mahieu",
   "license": "MIT",
