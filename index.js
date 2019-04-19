@@ -32,7 +32,7 @@ const cleanImage = async (image, opts) => {
   console.log(`Tags to delete: ${tagsToDelete.length}`);
   logTags(tagsToDelete);
 
-  if (tagsToDelete.length && (await promptConfirm())) {
+  if (tagsToDelete.length && (options.yes || (await promptConfirm()))) {
     await deleteTags(image, tagsToDelete, opts);
   }
 };

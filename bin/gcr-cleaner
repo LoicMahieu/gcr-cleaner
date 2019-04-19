@@ -5,16 +5,16 @@ const { run } = require("..");
 const args = require("yargs")
   .option("project", {
     alias: "p",
-    describe: "Google cloud project name"
+    describe: "Google cloud project name",
   })
   .option("keep", {
     default: 10,
-    describe: "Number of tags to keep"
+    describe: "Number of tags to keep",
   })
   .option("yes", {
     alias: "y",
     default: false,
-    describe: "Disable confirm before delete"
+    describe: "Disable confirm before delete",
   }).argv;
 
 run(args).catch(err => {
